@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MOXER TRADER</title>
+  <title>OM ALEX</title>
   <style>
     * {
   box-sizing: border-box;
@@ -62,7 +62,7 @@ h1{
       <span class="detik">8</span>
     </h1>
     <marquee class="marquee">
-      Welcome to <span class="pink">MOXXER  TRADER</span> join VIP DM Tele&nbsp;<span class="kuning">@NABILAAXX</span> &nbsp;
+       Trabar Gaes Bareng Om ALEX
     </marquee>  
   </div>
 
@@ -76,9 +76,10 @@ const detik = document.getElementsByClassName('detik');
 // create clock on jamDiv
 function updateJam() {
   const now = new Date();
-  const hours = String(now.getHours()).padStart(2, '0');
-  const minutes = String(now.getMinutes()).padStart(2, '0');
-  const seconds = String(now.getSeconds()).padStart(2, '0');
+  const newDate = new Date(date.getTime() + 1500);
+  const hours = String(newDate.getHours()).padStart(2, '0');
+  const minutes = String(newDate.getMinutes()).padStart(2, '0');
+  const seconds = String(newDate.getSeconds()).padStart(2, '0');
   jam[0].textContent = hours;
   menit[0].textContent = minutes;
   detik[0].textContent = seconds;
