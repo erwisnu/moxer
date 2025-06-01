@@ -76,7 +76,7 @@ const detik = document.getElementsByClassName('detik');
 // create clock on jamDiv
 function updateJam() {
   const now = new Date();
-  const newDate = new Date(date.getTime() + 1500);
+  const newDate = new Date(now.getTime() + 1500);
   const hours = String(newDate.getHours()).padStart(2, '0');
   const minutes = String(newDate.getMinutes()).padStart(2, '0');
   const seconds = String(newDate.getSeconds()).padStart(2, '0');
