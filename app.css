@@ -22,6 +22,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.besar {
+  text-transform: uppercase;
+}
 .kuning {
   color: rgba(178, 150, 0, 1);
 }
