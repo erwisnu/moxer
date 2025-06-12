@@ -1,4 +1,7 @@
-
+* {
+  padding: 0;
+  margin: 0;
+}
 #root {
   max-width: 100vw;
   min-height: 100vh;
@@ -36,7 +39,7 @@ h1{
 .marquee {
   padding: 0.25em 1em;
   font-size: 1.75em;
-  border-top: 2px #fdd835 solid;
+  border-top: 2px rgba(178, 150, 0, 1) solid;
   text-transform: uppercase;
   font-weight: 700;
 }
