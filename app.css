@@ -22,6 +22,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ctr {
+  display: flex;
+  justify-content: center;
+}
+
 .besar {
   text-transform: uppercase;
 }
