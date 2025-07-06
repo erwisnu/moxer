@@ -42,9 +42,12 @@ function updateJam() {
   menit[0].textContent = minutes;
   detik[0].textContent = seconds;
   if (lastDigitOfMinutes == 3 || lastDigitOfMinutes == 8) {
-    if (secondsInt > 40 && lastDigitOfMinutes == 3) {
+    if (secondsInt > 40) {
       detik[0].classList.add('kuning');
     }
+  }
+  else {
+    detik[0].classList.remove('kuning');
   }
 
 }
