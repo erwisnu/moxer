@@ -27,10 +27,10 @@
     const lastDigitOfMinutes = parseInt(minutes.charAt(minutes.length - 1), 10);
     if (lastDigitOfMinutes == 3 || lastDigitOfMinutes == 8) {
         // siap siap entry
-        crt[0].textContent = '<span class="kuning">SIAP SIAP ENTRY !! KALAU RAGU SKIP AJA YA !!</span>';
+        crt[0].innerHTML = '<span class="kuning">SIAP SIAP ENTRY !! KALAU RAGU SKIP AJA YA !!</span>';
     } 
     if (lastDigitOfMinutes == 4 || lastDigitOfMinutes == 9) {
-        crt[0].textContent = '<span class="hijau"> OKE SEMOGA MASUK ENTRY PERTAMA !!</span>';
+        crt[0].innerHTML = '<span class="hijau"> OKE SEMOGA MASUK ENTRY PERTAMA !!</span>';
     }
 
     if(lastDigitOfMinutes == 0 
@@ -38,13 +38,13 @@
     || lastDigitOfMinutes == 5
     || lastDigitOfMinutes == 6
   ) {
-        crt[0].textContent = 'TETAP TENANG - JAGA PSIKOLOGI - JANGAN GEGABAH';
+        crt[0].innerHTML = 'TETAP TENANG - JAGA PSIKOLOGI - JANGAN GEGABAH';
     } 
 
     if(lastDigitOfMinutes == 2
     || lastDigitOfMinutes == 7
   ) {
-        crt[0].textContent = 'GABUNG VIP GRUP GRATIS DM <span class"hijau">ANGGITAA88</span> ATAU CEK DI BIO YA';
+        crt[0].innerHTML = 'GABUNG VIP GRUP GRATIS DM <span class"hijau">ANGGITAA88</span> ATAU CEK DI BIO YA';
     } 
     
 
