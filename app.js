@@ -28,6 +28,8 @@ const menit = document.getElementsByClassName('menit');
 const detik = document.getElementsByClassName('detik');
 
 
+
+
 // create clock on jamDiv
 function updateJam() {
   let now = new Date();

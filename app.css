@@ -49,7 +49,7 @@ h1{
 .marquee {
   padding: 0.25em 1em;
   font-size: 1.75em;
-  border-top: 2px rgba(178, 150, 0, 1) solid;
+  /* border-top: 2px rgba(178, 150, 0, 1) solid; */
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -65,5 +65,8 @@ h1{
 .besar {
   font-size:4.5em;
   padding: 0 1em;
+}
+.hide {
+  display: none;
 }
 

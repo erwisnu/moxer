@@ -9,12 +9,49 @@
 </head>
 <body>
   <div id="root">
-    <marquee class="marquee besar">
-      PLEASE DYOR - <span class="pink">HIGH RISK</span>  <span class="hijau">HIGH REWARD BRO!</span> 
+    <marquee class="marquee">
+      <div class="crt"><span class="clr">TETAP TENANG - JAGA PSIKOLOGI - JANGAN GEGABAH</span></div> 
     </marquee>  
   </div>
 
+  <script>
+    const crt = document.getElementsByClassName('crt');
+    function updateJam() {
+    let now = new Date();
+    const newDate = new Date(now.getTime() + 1000);
+    const hours = String(newDate.getHours()).padStart(2, '0');
+    const minutes = String(newDate.getMinutes()).padStart(2, '0');
+    const seconds = String(newDate.getSeconds()).padStart(2, '0');
+    const secondsInt = parseInt(seconds, 10);
+    // get last 1 digit of of minutes
+    const lastDigitOfMinutes = parseInt(minutes.charAt(minutes.length - 1), 10);
+    if (lastDigitOfMinutes == 3 || lastDigitOfMinutes == 8) {
+        // siap siap entry
+        crt[0].textContent = '<span class="kuning">SIAP SIAP ENTRY !! KALAU RAGU SKIP AJA YA !!</span>';
+    } 
+    if (lastDigitOfMinutes == 4 || lastDigitOfMinutes == 9) {
+        crt[0].textContent = '<span class="hijau"> OKE SEMOGA MASUK ENTRY PERTAMA !!</span>';
+    }
 
+    if(lastDigitOfMinutes == 0 
+    || lastDigitOfMinutes == 1
+    || lastDigitOfMinutes == 5
+    || lastDigitOfMinutes == 6
+  ) {
+        crt[0].textContent = 'TETAP TENANG - JAGA PSIKOLOGI - JANGAN GEGABAH';
+    } 
+
+    if(lastDigitOfMinutes == 2
+    || lastDigitOfMinutes == 7
+  ) {
+        crt[0].textContent = 'GABUNG VIP GRUP GRATIS DM <span class"hijau">ANGGITAA88</span> ATAU CEK DI BIO YA';
+    } 
+    
+
+  }
+
+  setInterval(updateJam, 1000);
+  updateJam();
   </script>
 </body>
 </html>
