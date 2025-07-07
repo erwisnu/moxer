@@ -20,10 +20,53 @@
     </div>
     
     <marquee class="marquee">
-      <span class="hijau">SESI CURHAT NO SIGNAL - ENTRY SE ENAKNYA TANPA ABA2 - LAGI GABUT GA BISA TIDUR</span> 
+      <div class="crt"><span class="clr">TETAP TENANG - JAGA PSIKOLOGI - JANGAN GEGABAH</span></div> 
     </marquee>  
   </div>
 
-  <script src="./app2.js"></script>
+  <script src="./app.js"></script>
+  <script>
+    const crt = document.getElementsByClassName('crt');
+    function updateMarquee() {
+    let now = new Date();
+    const newDate = new Date(now.getTime() + 1000);
+    const hours = String(newDate.getHours()).padStart(2, '0');
+    const minutes = String(newDate.getMinutes()).padStart(2, '0');
+    const seconds = String(newDate.getSeconds()).padStart(2, '0');
+    const secondsInt = parseInt(seconds, 10);
+    // get last 1 digit of of minutes
+    const lastDigitOfMinutes = parseInt(minutes.charAt(minutes.length - 1), 10);
+    if (lastDigitOfMinutes == 3 || lastDigitOfMinutes == 8) {
+        // siap siap entry
+        crt[0].innerHTML = '<span class="kuning">SIAP SIAP ENTRY !! KALAU RAGU SKIP AJA YA 🤝🤝!!</span>';
+    } 
+    if (lastDigitOfMinutes == 4 || lastDigitOfMinutes == 9) {
+        crt[0].innerHTML = '<span class="hijau"> OKE SEMOGA MASUK ENTRY PERTAMA 🤑🤑!!</span>';
+    }
+
+    if(lastDigitOfMinutes == 0 
+    || lastDigitOfMinutes == 5
+  ) {
+        crt[0].innerHTML = 'TETAP TENANG - JAGA PSIKOLOGI - JANGAN GEGABAH 👌';
+    } 
+
+    if(lastDigitOfMinutes == 2
+    || lastDigitOfMinutes == 7
+  ) {
+        crt[0].innerHTML = 'GABUNG VIP GRUP GRATIS DM <span class"hijau">ANGGITAA88</span> ATAU CEK DI BIO YA 😍😍 ';
+    } 
+    if(lastDigitOfMinutes == 1
+    || lastDigitOfMinutes == 6
+  ) {
+        crt[0].innerHTML = 'NGOPI DULU - JANGAN LUPA MINUM AIR PUTIH - JAGA KESEHATAN 😘😘';
+    } 
+    
+
+  }
+
+  setInterval(updateMarquee, 1000);
+  updateMarquee();
+  </script>
+  </script>
 </body>
 </html>
