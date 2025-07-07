@@ -46,6 +46,14 @@ h1{
   margin:0em;
 }
 
+.jam-container2 {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+    color:rgba(40, 189, 102, 1)
+}
+
 .marquee {
   padding: 0.25em 1em;
   font-size: 1.75em;
