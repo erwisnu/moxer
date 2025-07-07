@@ -10,12 +10,16 @@
 <body>
   <div id="root">
     <marquee class="marquee">
-      <div class="crt"><span class="clr">TETAP TENANG - JAGA PSIKOLOGI - JANGAN GEGABAH</span></div> 
-    </marquee>  
-  </div>
+      <div class="crt"><span class="clr">TETAP TENANG - JAGA PSIKOLOGI - JANGAN GEGABAH </span></div> 
+    </marquee>
+    
+     </div>
 
   <script>
     const crt = document.getElementsByClassName('crt');
+
+
+
     function updateMarquee() {
     let now = new Date();
     const newDate = new Date(now.getTime() + 1000);
@@ -52,6 +56,12 @@
     
 
   }
+
+  setInterval(updateMarquee, 1000);
+  updateMarquee();
+    
+
+
   </script>
 </body>
 </html>
