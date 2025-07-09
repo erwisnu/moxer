@@ -49,7 +49,6 @@ function parseSignalText(signalTextArray, jamBerapa) {
 
   siap2 = '<span class="kuning">SIAP SIAP ENTRY !! KALAU RAGU SKIP AJA YA 🤝🤝!!</span>'
 
-  console.log(siap2)
   return;
 
 }
