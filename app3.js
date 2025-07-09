@@ -141,6 +141,6 @@ setInterval(updateJam, 1000);
 updateJam();
 
 // update quote every 1 minute
-setInterval(updateQuote, 60 * 1000);
+setInterval(updateQuote, 2 * 60 * 1000);
 updateQuote();
 
