@@ -89,9 +89,10 @@ function updateJam() {
 
   }
 
-  // update jaga from quotes
-  jaga = quotes[Math.floor(Math.random() * quotes.length)];
+}
 
+function updateQuote() {
+  jaga = quotes[Math.floor(Math.random() * quotes.length)];
 
 }
 
@@ -138,3 +139,8 @@ updateMarquee();
 
 setInterval(updateJam, 1000);
 updateJam();
+
+// update quote every 1 minute
+setInterval(updateQuote, 60 * 1000);
+updateQuote();
+
