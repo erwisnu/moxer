@@ -32,7 +32,7 @@ let siap2 = '<span class="kuning">SIAP SIAP ENTRY !! KALAU RAGU SKIP AJA YA 🤝
 let semoga = '<span class="hijau"> OKE SEMOGA MASUK ENTRY PERTAMA 🤑🤑!!</span>';
 let jaga = '';
 let gabung = 'GABUNG VIP GRUP GRATIS DM <span class="hijau">ANGGITAA88</span> ATAU CEK DI CHANNEL KANGOPIT 😍😍';
-let ngopi = 'NGOPI DULU ☕☕ - JANGAN LUPA MINUM AIR PUTIH 🥛🥛 - JAGA KESEHATAN 😘😘';
+let ngopi = 'TERIMA KASIH SUDAH BERGABUNG DI OM ALEX, JANGAN LUPA TAP2, POSTING ULANG DAN SHARE YA 😍😍';
 
 function parseSignalText(signalTextArray, jamBerapa) {
   console.log('Parsing signal for jam:', jamBerapa);
