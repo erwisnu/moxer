@@ -6,13 +6,31 @@ const detik = document.getElementsByClassName('detik');
 
 let currentJam = '';
 
+const quotes = [
+  "Jangan pernah mencari keuntungan instan dalam trading. Fokuslah pada prosesnya, dan hasilnya akan mengikuti.",
+  "Trading itu seperti seni, butuh latihan dan kesabaran untuk menguasainya.",
+  "Setiap kerugian dalam trading adalah pelajaran berharga. Jangan biarkan emosi menguasai keputusanmu.",
+  "Kesabaran adalah kunci sukses dalam trading. Jangan terburu-buru mengambil keputusan.",
+  "Jangan pernah berhenti belajar. Dunia trading selalu berubah, dan kamu harus siap menghadapinya.",
+  "Disiplin adalah fondasi dari setiap trader sukses. Tetaplah pada rencanamu, meskipun pasar bergerak tidak sesuai harapan.",
+  "Jangan biarkan keserakahan mengendalikanmu. Tetapkan target yang realistis dan patuhi rencanamu.",
+  "Trading bukan tentang cepat kaya, tetapi tentang mengelola risiko dengan bijak.",
+  "Setiap trader pasti mengalami kerugian. Yang membedakan trader sukses adalah bagaimana mereka mengelola kerugian tersebut.",
+  "Jangan pernah meremehkan kekuatan analisis teknikal. Grafik dan indikator adalah alat penting dalam trading.",
+  "Trading itu seperti maraton, bukan sprint. Fokuslah pada konsistensi dan keberlanjutan, bukan pada hasil instan.",
+  "Jangan pernah menginvestasikan uang yang tidak bisa kamu rugikan. Trading harus dilakukan dengan uang yang sudah kamu siapkan untuk risiko.",
+  "Emosi adalah musuh terbesar dalam trading. Pelajari cara mengendalikan emosimu agar tidak mempengaruhi keputusan trading.",
+  "Setiap trader memiliki gaya dan strategi yang berbeda. Temukan apa yang paling cocok untukmu dan kembangkan dirimu di sana.",
+  "Jangan pernah berhenti beradaptasi. Pasar selalu berubah, dan kamu harus siap untuk beradaptasi dengan perubahan tersebut.",
+];
+
 const signalClass = document.getElementsByClassName('signal');
 const signalText = signalClass[0].textContent;
 const signalTextArray = signalText.split(/\r?\n/).map(line => line.trim()).filter(line => line.length > 0);
 
 let siap2 = '<span class="kuning">SIAP SIAP ENTRY !! KALAU RAGU SKIP AJA YA 🤝🤝!!</span>'
 let semoga = '<span class="hijau"> OKE SEMOGA MASUK ENTRY PERTAMA 🤑🤑!!</span>';
-let jaga = 'TETAP TENANG - JAGA PSIKOLOGI - JANGAN LUPA WEDE 👌';
+let jaga = '';
 let gabung = 'GABUNG VIP GRUP GRATIS DM <span class="hijau">ANGGITAA88</span> ATAU CEK DI CHANNEL KANGOPIT 😍😍';
 let ngopi = 'NGOPI DULU ☕☕ - JANGAN LUPA MINUM AIR PUTIH 🥛🥛 - JAGA KESEHATAN 😘😘';
 
@@ -70,6 +88,9 @@ function updateJam() {
     parseSignalText(signalTextArray, jamText);
 
   }
+
+  // update jaga from quotes
+  jaga = quotes[Math.floor(Math.random() * quotes.length)];
 
 
 }
