@@ -86,6 +86,7 @@ function updateJam() {
     currentJam = jamText;
 
     parseSignalText(signalTextArray, jamText);
+    updateQuote();
 
   }
 
@@ -140,7 +141,4 @@ updateMarquee();
 setInterval(updateJam, 1000);
 updateJam();
 
-// update quote every 1 minute
-setInterval(updateQuote, 2 * 60 * 1000);
-updateQuote();
 
