@@ -41,7 +41,7 @@ function parseSignalText(signalTextArray, jamBerapa) {
     const parts = jamSignal.split(' ');
     if (parts.length >= 2) {
       const signal = parts[1];
-      siap2 = `${signal == 'B' ? '<span class="hijau">SIAP SIAP ENTRY BUY!!</span>' : '<span class="pink">SIAP SIAP ENTRY  SELL!!</span>'} <span class="kuning">KALAU RAGU SKIP AJA YA 🤝🤝!!</span>`
+      siap2 = `${signal == 'B' ? '<span class="hijau">JAM ' + jamBerapa + ' SIAP SIAP ENTRY BUY!!</span>' : '<span class="pink">SIAP SIAP ENTRY  SELL!!</span>'} <span class="kuning">KALAU RAGU SKIP AJA YA 🤝🤝!!</span>`
       semoga = `<span class="hijau"> OKE SEMOGA AMAN UNTUK ENTRY ${signal == 'B' ? 'BUY' : 'SELL'} DI OPEN PERTAMA TANPA KOMPEN 🤑🤑!!</span>`
       return
     }
